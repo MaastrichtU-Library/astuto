@@ -24,11 +24,11 @@ services:
     environment: &web-env
       <<: [*db-env, *redis-env]
       ACTIVE_JOB_BACKEND: sidekiq
-      BASE_URL: http://localhost:3000
+      BASE_URL: http://localhost:80
       SECRET_KEY_BASE: 99A8B5170B658E4FBF2A3DCC30C40C4382F6565D3DD9E5EA9B26515700612AFB
 
     ports:
-      - "3000:3000"
+      - "8003:80"
     depends_on:
       - redis
       - db

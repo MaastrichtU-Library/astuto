@@ -1,6 +1,6 @@
 # Create tenant
 tenant = Tenant.create(
-  site_name: 'Default Site Name',
+  site_name: 'DSRI Roadmap',
   subdomain: 'default',
   status: 'active'
 )
